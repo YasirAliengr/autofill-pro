@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoFill Pro — Privacy Policy</title>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #1e293b; }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; color: #2563eb; }
+    .date { color: #64748b; font-size: 14px; margin-bottom: 32px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    .highlight { background: #dbeafe; padding: 16px 20px; border-radius: 8px; border-left: 4px solid #2563eb; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>AutoFill Pro — Privacy Policy</h1>
+  <p class="date">Last updated: April 13, 2026</p>
+
+  <div class="highlight">
+    <strong>Summary:</strong> AutoFill Pro stores all data locally on your device. We do not collect, transmit, or share any personal information. No analytics, no tracking, no servers.
+  </div>
+
+  <h2>1. Data Storage</h2>
+  <p>All data you enter (autofill rules, profiles, variables, text clips, settings) is stored exclusively in your browser's local storage using the <code>chrome.storage.local</code> API. This data never leaves your device.</p>
+
+  <h2>2. Data Collection</h2>
+  <p>AutoFill Pro does <strong>not</strong> collect any data. Specifically, we do not collect:</p>
+  <ul>
+    <li>Personal information (name, email, address)</li>
+    <li>Browsing history or visited URLs</li>
+    <li>Form data you fill on websites</li>
+    <li>Usage analytics or telemetry</li>
+    <li>Crash reports</li>
+  </ul>
+
+  <h2>3. Website Access</h2>
+  <p>AutoFill Pro requires access to websites (http/https) to function — it needs to read form fields on pages and fill them with your configured rules. The extension:</p>
+  <ul>
+    <li>Only reads form field attributes (name, id, placeholder) to match your rules</li>
+    <li>Only writes values you have explicitly configured into matching fields</li>
+    <li>Does not read or store page content, cookies, or passwords from websites</li>
+    <li>Does not inject ads, trackers, or third-party scripts</li>
+  </ul>
+
+  <h2>4. Encryption</h2>
+  <p>Password values can be encrypted using AES-GCM (256-bit) via the Web Crypto API before storage. The encryption key is derived from your browser's unique extension installation ID, ensuring encrypted values cannot be read outside your browser.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>AutoFill Pro does <strong>not</strong> communicate with any external servers, APIs, or third-party services. The extension works entirely offline after installation.</p>
+
+  <h2>6. Data Deletion</h2>
+  <p>You can delete all stored data at any time via the "Factory Reset" option in Settings. Uninstalling the extension also removes all stored data from your browser.</p>
+
+  <h2>7. Permissions Justification</h2>
+  <ul>
+    <li><strong>storage</strong> — Save your autofill rules, profiles, and settings locally</li>
+    <li><strong>activeTab</strong> — Access the current tab to fill forms when you trigger autofill</li>
+    <li><strong>scripting</strong> — Inject the autofill engine into web pages to read and fill form fields</li>
+    <li><strong>contextMenus</strong> — Add right-click menu options (Fill page, Add rules, etc.)</li>
+    <li><strong>sidePanel</strong> — Provide a side panel for quick access to profiles and actions</li>
+    <li><strong>host_permissions (http/https)</strong> — Required to run the content script on web pages containing forms</li>
+  </ul>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>If we make changes to this privacy policy, we will update the "Last updated" date above. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about this privacy policy or the extension, please open an issue on our support page or contact us through the Chrome Web Store listing.</p>
+</body>
+</html>
